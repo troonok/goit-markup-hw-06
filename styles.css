@@ -399,11 +399,14 @@ h1, h2, h3, p {
     display: flex;
     padding-top: 60px;
     padding-bottom: 60px;
+    justify-content: space-between;
 }
 .footer .link{
     font-style: normal;
 }
-.footer .logo-link{
+.footer .logo-link,
+.newsletter-text
+{
     margin-bottom: 20px;
 }
 .footer .contact-link{
@@ -415,13 +418,65 @@ footer .change-color{
 }
 .connect-links{
     margin-left: 70px;
+    margin-right: 93px;
 }
-.connect-text{
-font-weight: 700;
-text-transform: uppercase;
-color: #FFFFFF;
+.connect-text,
+.newsletter-text{
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #FFFFFF;
 }
+.newsletter-input{
+    background: inherit;
+    padding: 15px 15px;
+    width: 358px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    color: #FFFFFF;
+}
+.newsletter .newsletter-input::placeholder{
+    
+    font-size: 16px;
+    line-height: 1.25;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
 
+}
+.newsletter-input:focus-within{
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    color:#FFFFFF;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.newsletter-button{
+    cursor: pointer;
+    margin-left: 12px;
+    padding-top:10px;
+    padding-right: 28px;
+    padding-bottom: 10px;
+    padding-left: 28px;
+    background-color: var(--accent-color);
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    /* identical to box height, or 188% */
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    border: none ;
+    color: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+.newsletter-icon{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    
+}
 /*портфолио*/
 .portfolio-list{
     display: flex;
