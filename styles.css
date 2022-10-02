@@ -216,7 +216,7 @@ h1, h2, h3, p {
     position: relative;
 }
 .active-fields{
-    display: block;
+    display:block;
     
 }
 .active-fields:not(:last-child){
@@ -254,7 +254,8 @@ h1, h2, h3, p {
 }
 .form-icon{
     position: absolute;
-    top: 11px;
+    top: 35px;
+
     left:12px;
 }
 .close-button{
