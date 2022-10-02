@@ -166,6 +166,7 @@ h1, h2, h3, p {
     letter-spacing: 0.06em;
     color:#ffffff;
     background-color: var(--accent-color);
+    cursor: pointer;
 }
 .backdrop{
     position: fixed;
